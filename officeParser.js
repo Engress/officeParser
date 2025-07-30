@@ -169,7 +169,7 @@ function parsePowerPoint(file, callback, config) {
             });
 
             // Respond by calling the Callback function.
-            callback(responseText.join(config.newlineDelimiter ?? "\n"), undefined);
+            callback(responseText, undefined);
         })
         .catch(e => callback(undefined, e));
 }
